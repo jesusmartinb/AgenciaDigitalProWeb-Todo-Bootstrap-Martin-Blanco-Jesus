@@ -805,6 +805,10 @@ label {
     background-image: url(https://cyberdietoterapia.com/images/background-diseno.jpg);
 }
 
+#desarrollo .hero {
+    background-image: url(https://cyberdietoterapia.com/images/background-desarrollo.jpg);
+}
+
 hr {
     padding: 0 8rem !important;
     width: 0% !important;
@@ -828,12 +832,18 @@ hr {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    #desarrollo .column3 {
+        background-image: url(https://cyberdietoterapia.com/images/img05.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1400px) {
     #diseno .column2,
-    #diseno .column3
-    /*#desarrollo .column1,
+    #diseno .column3,
+    #desarrollo .column1,
     #desarrollo .column2,
     #optimiza .column2,
     #posicionamiento .column1,
@@ -841,7 +851,28 @@ hr {
     #publicidad .column2,
     #publicidad .column3,
     #marketing .column1,
-    #marketing .column2 */ {
+    #marketing .column2 {
+        padding: 5rem;
+    }
+
+    #servicios .main h3,
+    #servicios .main p {
+        margin: 5rem 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #diseno .column2,
+    #diseno .column3,
+    #desarrollo .column1,
+    #desarrollo .column2,
+    #optimiza .column2,
+    #posicionamiento .column1,
+    #posicionamiento .column2,
+    #publicidad .column2,
+    #publicidad .column3,
+    #marketing .column1,
+    #marketing .column2 {
         padding: 10rem;
     }
 
