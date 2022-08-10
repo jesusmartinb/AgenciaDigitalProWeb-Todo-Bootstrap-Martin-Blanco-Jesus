@@ -809,6 +809,10 @@ label {
     background-image: url(https://cyberdietoterapia.com/images/background-desarrollo.jpg);
 }
 
+#optimiza .hero {
+    background-image: url(https://cyberdietoterapia.com/images/background-optimi.jpg);
+}
+
 hr {
     padding: 0 8rem !important;
     width: 0% !important;
@@ -838,6 +842,26 @@ hr {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    #optimiza .column1 {
+        background-image: url(https://cyberdietoterapia.com/images/img06.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#diseno .column2,
+#diseno .column3,
+#desarrollo .column1,
+#desarrollo .column2,
+#optimiza .column2,
+#posicionamiento .column1,
+#posicionamiento .column2,
+#publicidad .column2,
+#publicidad .column3,
+#marketing .column1,
+#marketing .column2 {
+    padding: 2rem;
 }
 
 @media screen and (min-width: 1400px) {
