@@ -801,6 +801,10 @@ label {
 /* Fin Formularios */
 
 /* Servicios */
+.row {
+    --bs-gutter-x: 0;
+}
+
 #diseno .hero {
     background-image: url(https://cyberdietoterapia.com/images/background-diseno.jpg);
 }
