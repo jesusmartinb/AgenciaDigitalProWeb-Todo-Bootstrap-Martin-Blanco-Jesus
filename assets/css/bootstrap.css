@@ -817,6 +817,10 @@ label {
     background-image: url(https://cyberdietoterapia.com/images/background-posiciona.jpg);
 }
 
+#publicidad .hero {
+    background-image: url(https://cyberdietoterapia.com/images/background-publi.jpg);
+}
+
 hr {
     padding: 0 8rem !important;
     width: 0% !important;
@@ -855,6 +859,12 @@ hr {
 
     #posicionamiento .column3 {
         background-image: url(https://cyberdietoterapia.com/images/img07.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #publicidad .column1 {
+        background-image: url(https://cyberdietoterapia.com/images/img08.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
