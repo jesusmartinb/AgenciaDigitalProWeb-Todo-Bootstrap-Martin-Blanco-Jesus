@@ -813,6 +813,10 @@ label {
     background-image: url(https://cyberdietoterapia.com/images/background-optimi.jpg);
 }
 
+#posicionamiento .hero {
+    background-image: url(https://cyberdietoterapia.com/images/background-posiciona.jpg);
+}
+
 hr {
     padding: 0 8rem !important;
     width: 0% !important;
@@ -845,6 +849,12 @@ hr {
 
     #optimiza .column1 {
         background-image: url(https://cyberdietoterapia.com/images/img06.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #posicionamiento .column3 {
+        background-image: url(https://cyberdietoterapia.com/images/img07.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
