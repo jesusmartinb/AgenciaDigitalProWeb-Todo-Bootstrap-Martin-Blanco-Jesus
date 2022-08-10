@@ -497,6 +497,10 @@ p, .acordeon__item i:before, .acordeon__item i:after {
     background-size:cover;
 }
 
+.hero h2 {
+    padding-top: 6rem;
+}
+
 #sobre .hero {
     background-image: url(https://cyberdietoterapia.com/images/background-nosotros.jpg);
 }
@@ -516,6 +520,10 @@ p, .acordeon__item i:before, .acordeon__item i:after {
 
     .quieres-trabajar {
         padding-right: 20%;
+    }
+
+    #servicios .main .image img {
+        visibility: hidden;
     }
 }
 
@@ -791,3 +799,55 @@ label {
     }
 }
 /* Fin Formularios */
+
+/* Servicios */
+#diseno .hero {
+    background-image: url(https://cyberdietoterapia.com/images/background-diseno.jpg);
+}
+
+hr {
+    padding: 0 8rem !important;
+    width: 0% !important;
+    opacity: 1;
+    margin: 2rem auto;
+}
+
+@media screen and (min-width: 992px) {
+    .column1,
+    .column2,
+    .column3 {
+        flex-basis: 33.3%;
+    }
+
+    .row hr {
+        display: none;
+    }
+
+    #diseno .column1 {
+        background-image: url(https://cyberdietoterapia.com/images/img04.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #diseno .column2,
+    #diseno .column3
+    /*#desarrollo .column1,
+    #desarrollo .column2,
+    #optimiza .column2,
+    #posicionamiento .column1,
+    #posicionamiento .column2,
+    #publicidad .column2,
+    #publicidad .column3,
+    #marketing .column1,
+    #marketing .column2 */ {
+        padding: 10rem;
+    }
+
+    #servicios .main h3,
+    #servicios .main p {
+        margin: 10rem 0;
+    }
+}
+
