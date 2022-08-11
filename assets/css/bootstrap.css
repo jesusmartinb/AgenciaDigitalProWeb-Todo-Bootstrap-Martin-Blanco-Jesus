@@ -567,6 +567,20 @@ p, .acordeon__item i:before, .acordeon__item i:after {
     overflow: hidden;
 }
 
+.card-content {
+    min-height: 380px;
+}
+
+#testimonios .card .image {
+    width: 310px;
+    height: 310px;
+    overflow: hidden;
+}
+
+#testimonios .image img {
+    width: 100%;
+}
+
 .card img {
     height: 310px;
 }
@@ -579,13 +593,18 @@ p, .acordeon__item i:before, .acordeon__item i:after {
     font-variant: small-caps;
 }
 
+.card .nombre {
+    font-weight: 700;
+}
+
 .citation {
     font-style: italic;
 }
 /* Fin Cards Equipo */
 
 /* Animación slider cards-equipo y cards-testimonios*/
-.cards-equipo {
+.cards-equipo,
+.cards-testimonios {
     width: 310px;
     height: auto;
     margin: 10px auto 0;
@@ -600,24 +619,26 @@ p, .acordeon__item i:before, .acordeon__item i:after {
 	animation: slide 30s infinite alternate ease-in-out;
 }
 
-/* .cards-testimonios ul {
+.cards-testimonios ul {
     display: flex;
 	padding: 0;
 	width: 300%;
 	
 	animation: slide2 36s infinite alternate ease-in-out;
-} */
+}
 
-.cards-equipo li {
-	width: 100%;
+.cards-equipo li,
+.cards-testimonios li {
+	width: 310px;
 	list-style: none;
 }
 
-.cards-equipo .card {
+.cards-equipo .card,
+.cards-testimonios .card {
 	width: 100%;
 }
 
-/* @keyframes slide4 {
+@keyframes slide4 {
 	0% {margin-left: 0;}
 	30% {margin-left: 0;}
 	
@@ -626,7 +647,7 @@ p, .acordeon__item i:before, .acordeon__item i:after {
 	
 	66% {margin-left: 0%;}
 	100% {margin-left: 0%;}
-} */
+}
 
 @keyframes slide3 {
 	0% {margin-left: 0;}
@@ -639,7 +660,7 @@ p, .acordeon__item i:before, .acordeon__item i:after {
 	100% {margin-left: -100%;}
 }
 
-/* @keyframes slide2 {
+@keyframes slide2 {
 	0% {margin-left: 0;}
 	30% {margin-left: 0;}
 	
@@ -648,7 +669,7 @@ p, .acordeon__item i:before, .acordeon__item i:after {
 	
 	66% {margin-left: -200%;}
 	100% {margin-left: -200%;}
-} */
+}
 
 @keyframes slide {
 	0% {margin-left: 0;}
@@ -665,15 +686,18 @@ p, .acordeon__item i:before, .acordeon__item i:after {
 }
 
 @media screen and (min-width: 1024px) {
-    .cards-equipo {
+    .cards-equipo,
+    .cards-testimonios {
         width: 650px;
     }
 
-    .cards-equipo li {
+    .cards-equipo li,
+    .cards-testimonios li{
         width: 50%;
     }
 
-    .cards-equipo .card {
+    .cards-equipo .card,
+    .cards-testimonios .card {
         width: 90%;
     }
 
@@ -682,13 +706,13 @@ p, .acordeon__item i:before, .acordeon__item i:after {
         animation: slide3 30s infinite alternate ease-in-out;
     }
 
-    /* .cards-testimonios ul {
+    .cards-testimonios ul {
         width: 150%;        
         animation: slide4 36s infinite alternate ease-in-out;
-    } */
+    }
 
     .card-content {
-        min-height: 30rem;
+        min-height: 410px;
     }
 }
 /* Fin Animación slider cards-equipo y cards-testimonios */
