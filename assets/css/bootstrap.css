@@ -801,6 +801,14 @@ label {
 /* Fin Formularios */
 
 /* Servicios */
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
 #diseno .hero {
     background-image: url(https://cyberdietoterapia.com/images/background-diseno.jpg);
 }
@@ -833,12 +841,6 @@ hr {
 }
 
 @media screen and (min-width: 992px) {
-    .column1,
-    .column2,
-    .column3 {
-        flex-basis: 33.3%;
-    }
-
     .column2 p:first-child,
     .column3 p:first-child {
         margin-top: 8rem;
