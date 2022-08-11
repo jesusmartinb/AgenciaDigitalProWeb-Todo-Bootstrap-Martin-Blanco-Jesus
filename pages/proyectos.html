@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>ProWeb - Agencia</title>
+		<title>ProWeb - Proyectos</title>
 		<!-- Font Awesome -->
 		<script src="https://kit.fontawesome.com/92d719d9ae.js" crossorigin="anonymous"></script>
 		<!-- Normalización de estilos o reseteo con Normalize -->
@@ -14,60 +14,86 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@200;400;700;900&display=swap" rel="stylesheet">
+		<!-- Bootstrap CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 		<!-- Estilos generales -->
-		<link rel="stylesheet" href="../assets/css/styles.css">
+		<!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+		<link rel="stylesheet" href="../assets/css/bootstrap.css">
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-latest.js"></script>
 	</head>
 
-<body id="proyectos" class="black">
-	<header class="header">
-		<div class="header__menu-bar">
-			<a href="#" class="btn--menu"><i class="fas fa-bars" id="boton-menu"></i></a>
-		</div>
-		
-		<div class="header__contacto">
-			<div class="header__tel-mail">
+<body id="proyectos" class="black d-grid">
+	<header class="pt-2 d-md-grid">
+		<div class="mt-5 mt-md-2 d-flex flex-column d-md-flex flex-md-row justify-content-center justify-content-md-between align-items-center align-items-md-center">
+			<div class="fs-3 ms-md-3">
 				<p>674581254 | info@proweb.com</p>
 			</div>
 			<div class="header__redes">
-				<i class="fab fa-linkedin"></i>
-				<i class="fab fa-twitter-square"></i>
-				<i class="fab fa-instagram-square"></i>
+				<i class="fab mb-4 me-3 fa-linkedin"></i>
+				<i class="fab mb-4 me-3 fa-twitter-square"></i>
+				<i class="fab mb-4 me-3 fa-instagram-square"></i>
 			</div> <!-- fin .header__redes -->
 		</div> <!-- fin .header__contacto -->
-		<div class="header__logo">
-			<a class="black" href="../index.html">ProWeb</a>
-		</div> <!-- fin .header__logo-->
-		<nav class="header__menu-principal">
-			<ul>
-				<li class="submenu"><a class="black" href="agencia.html">Agencia </a> <i class="fas fa-angle-down carret"></i>
-					<ul class="children">
-						<li><a href="agencia.html#sobre">Sobre Nosotros</a></li>
-						<li><a href="agencia.html#equipo">Equipo</a></li>
-						<li><a href="agencia.html#nuevo">Nuevo Talento</a></li>
-					</ul> <!-- Fin submenú agencia -->
-				</li>
-				<li class="submenu"><a class="black" href="servicios.html">Servicios </a> <i class="fas fa-angle-down carret"></i>
-					<ul class="children">
-						<li><a href="servicios.html#diseno">Diseño Web</a></li>
-						<li><a href="servicios.html#desarrollo">Desarrollo Web</a></li>
-						<li><a href="servicios.html#optimiza">Optimización</a></li>
-						<li><a href="servicios.html#posicionamiento">Posicionamiento</a></li>
-						<li><a href="servicios.html#publicidad">Publicidad</a></li>
-						<li><a href="servicios.html#marketing">Marketing</a></li>
-					</ul><!-- Fin submenu servicios -->
-				</li>
-				<li class="submenu"><a class="black" href="proyectos.html">Proyectos </a> <i class="fas fa-angle-down carret"></i>
-					<ul class="children">
-						<li><a href="proyectos.html#portfolio">Portfolio</a></li>
-						<li><a href="proyectos.html#testimonios">Testimonios</a></li>
-					</ul><!-- Fin submenú proyectos -->
-				</li>
-				<li><a class="black" href="planes.html">Planes</a></li>
-				<li><a class="black" href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav> <!-- Fin navegación principal del header-->
+		<div class="d-flex justify-content-between align-items-center px-4">
+			<div class="header__logo d-flex justify-content-center justify-content-md-start ms-md-5">
+				<a class="black" href="../index.html">ProWeb</a>
+			</div> <!-- fin .header__logo-->
+			<nav class="navbar navbar-expand-md">
+				<div class="container-fluid">
+				  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<!-- <a class="navbar-brand" href="./index.html">ProWeb</a> -->
+					<div class="offcanvas-body">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<!-- <li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">ProWeb</a>
+							</li> -->
+							<li class="submenu nav-item dropdown">
+								<a class="black nav-link" href="agencia.html" role="button">Agencia</a>
+								<a href="" role="button" class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+									<span class="visually-hidden">Toggle Dropdown</span>
+								</a>
+								<ul class="children dropdown-menu">
+									<li><a class="dropdown-item" href="agencia.html#sobre">Sobre Nosotros</a></li>
+									<li><a class="dropdown-item" href="agencia.html#equipo">Equipo</a></li>
+									<li><a class="dropdown-item" href="agencia.html#nuevo">Nuevo Talento</a></li>
+								</ul> <!-- Fin submenú agencia -->
+							</li>
+							<li class="submenu nav-item dropdown">
+								<a class="black nav-link" href="servicios.html" role="button">Servicios</a>
+								<a href="" role="button" class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+									<span class="visually-hidden">Toggle Dropdown</span>
+								</a>
+								<ul class="children dropdown-menu">
+									<li><a class="dropdown-item" href="servicios.html#diseno">Diseño Web</a></li>
+									<li><a class="dropdown-item" href="servicios.html#desarrollo">Desarrollo Web</a></li>
+									<li><a class="dropdown-item" href="servicios.html#optimiza">Optimización</a></li>
+									<li><a class="dropdown-item" href="servicios.html#posicionamiento">Posicionamiento</a></li>
+									<li><a class="dropdown-item" href="servicios.html#publicidad">Publicidad</a></li>
+									<li><a class="dropdown-item" href="servicios.html#marketing">Marketing</a></li>
+								</ul><!-- Fin submenu servicios -->
+							</li>
+							<li class="submenu nav-item dropdown">
+								<a class="black nav-link" href="proyectos.html" role="button">Proyectos</a>
+								<a href="" role="button" class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+									<span class="visually-hidden">Toggle Dropdown</span>
+								</a>
+								<ul class="children dropdown-menu">
+									<li><a class="dropdown-item" href="proyectos.html#portfolio">Portfolio</a></li>
+									<li><a class="dropdown-item" href="proyectos.html#testimonios">Testimonios</a></li>
+								</ul><!-- Fin submenú proyectos -->
+							</li>
+							<li class="nav-item"><a class="black nav-link" href="planes.html">Planes</a></li>
+							<li class="nav-item"><a class="black nav-link" href="contacto.html">Contacto</a></li>
+						</ul>
+					</div>
+				  </div>
+				</div>
+			</nav> <!-- Fin navegación principal del header-->
+		</div>
 	</header> <!-- Fin header -->
 	<main class="main">
 		<h1>Proyectos Web, <br>Marketing Digital y Mucho Más...</h1>
@@ -77,7 +103,7 @@
 				<article class="gallery-item hijo1">
 					<div class="gallery-item__media">
 						<a href="https://mery-lou.com" target="_blank">
-							<img src="https://cyberdietoterapia.com/images/galeria1.jpg" alt="Restaurante Mery-Lou" class="gallery-item__image">
+							<img src="https://cyberdietoterapia.com/images/galeria1.jpg" alt="Restaurante Mery-Lou" class="gallery-item__image img-fluid">
 						</a>
 					</div>
 					<div class="gallery-item__body">
@@ -91,7 +117,7 @@
 				<article class="gallery-item hijo2">
 					<div class="gallery-item__media">
 						<a href="https://cyberdietoterapia.com/sostenible" target="_blank">
-							<img src="https://cyberdietoterapia.com/images/galeria2.jpg" alt="Objetivos de sostenibilidad de la ONU" class="gallery-item__image">
+							<img src="https://cyberdietoterapia.com/images/galeria2.jpg" alt="Objetivos de sostenibilidad de la ONU" class="gallery-item__image img-fluid">
 						</a>
 					</div>
 					<div class="gallery-item__body">
@@ -103,7 +129,7 @@
 				<article class="gallery-item hijo3">
 					<div class="gallery-item__media">
 						<a href="https://blog.mery-lou.com" target="_blank">
-							<img src="https://cyberdietoterapia.com/images/galeria3.jpg" alt="Blog Mery-Lou" class="gallery-item__image">
+							<img src="https://cyberdietoterapia.com/images/galeria3.jpg" alt="Blog Mery-Lou" class="gallery-item__image img-fluid">
 						</a>
 					</div>
 					<div class="gallery-item__body">
@@ -115,7 +141,7 @@
 				<article class="gallery-item hijo4">
 					<div class="gallery-item__media">
 						<a href="https://the-dream-jmb-2021.netlify.app" target="_blank">
-							<img src="https://cyberdietoterapia.com/images/galeria4.jpg" alt="The Dream" class="gallery-item__image">
+							<img src="https://cyberdietoterapia.com/images/galeria4.jpg" alt="The Dream" class="gallery-item__image img-fluid">
 						</a>
 					</div>
 					<div class="gallery-item__body">
@@ -127,7 +153,7 @@
 				<article class="gallery-item hijo5">
 					<div class="gallery-item__media">
 						<a href="https://cyberdietoterapia.com" target="_blank">
-							<img src="https://cyberdietoterapia.com/images/galeria5.jpg" alt="Asimov Fans" class="gallery-item__image">
+							<img src="https://cyberdietoterapia.com/images/galeria5.jpg" alt="Asimov Fans" class="gallery-item__image img-fluid">
 						</a>
 					</div>
 					<div class="gallery-item__body">
@@ -139,7 +165,7 @@
 				<article class="gallery-item hijo6">
 					<div class="gallery-item__media">
 						<a href="https://jmartinblan.netlify.app" target="_blank">
-							<img src="https://cyberdietoterapia.com/images/galeria6.jpg" alt="Desarrollo Front-End" class="gallery-item__image"></a></div>
+							<img src="https://cyberdietoterapia.com/images/galeria6.jpg" alt="Desarrollo Front-End" class="gallery-item__image img-fluid"></a></div>
 					<div class="gallery-item__body">
 						<h2 class="gallery-item__title"><a href="https://jmartinblan.netlify.app" target="_blank" class="gallery-item__title-link">Desarrollo Front-End. Como construir una web</a></h2>
 						<h3 class="gallery-item__subtitle">2020</h3>
@@ -149,7 +175,7 @@
 				<article class="gallery-item hijo7">
 					<div class="gallery-item__media">
 						<a href="https://pokemon-game-jmb-2022.netlify.app" target="_blank">
-							<img src="https://cyberdietoterapia.com/images/galeria7.jpg" alt="Pokemon Game" class="gallery-item__image">
+							<img src="https://cyberdietoterapia.com/images/galeria7.jpg" alt="Pokemon Game" class="gallery-item__image img-fluid">
 						</a>
 					</div>
 					<div class="gallery-item__body">
@@ -171,7 +197,7 @@
 							</div> <!-- Fin .card-content -->
 							<div class="card-testigo">
 								<div class="image-testigo image">
-									<img src="https://cyberdietoterapia.com/images/testigo1.jpg" alt="testigo" class="testigo">
+									<img src="https://cyberdietoterapia.com/images/testigo1.jpg" alt="testigo" class="testigo img-fluid">
 								</div> <!-- Fin .image-testigo -->
 								<div class="identidad">
 									<p class="nombre">Guillermo Torres</p>
@@ -187,7 +213,7 @@
 							</div> <!-- Fin .card-content -->
 							<div class="card-testigo">
 								<div class="image-testigo image">
-									<img src="https://cyberdietoterapia.com/images/testigo2.jpg" alt="testigo" class="testigo">
+									<img src="https://cyberdietoterapia.com/images/testigo2.jpg" alt="testigo" class="testigo img-fluid">
 								</div> <!-- Fin .image-testigo -->
 								<div class="identidad">
 									<p class="nombre">Julio Pino</p>
@@ -203,7 +229,7 @@
 							</div> <!-- Fin .card-content -->
 							<div class="card-testigo">
 								<div class="image-testigo image">
-									<img src="https://cyberdietoterapia.com/images/testigo3.jpg" alt="testigo" class="testigo">
+									<img src="https://cyberdietoterapia.com/images/testigo3.jpg" alt="testigo" class="testigo img-fluid">
 								</div> <!-- Fin .image-testigo -->
 								<div class="identidad">
 									<p class="nombre">Luisa Hernández</p>
@@ -263,6 +289,8 @@
 		<div class="footer__logo"><a href="../index.html">ProWeb</a></div>
 	</footer> <!-- Fin footer -->
 
+	<!-- Bootstrap JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<script src="../assets/js/main.js"></script>
 </body>
 
