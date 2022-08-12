@@ -794,13 +794,17 @@ label {
 
 @media screen and (min-width: 768px) {
     .nom-tel,
-    .mail-vacan {
+    .mail-vacan,
+    .nom-ape,
+    .mail-tel {
         display: flex;
         justify-content: space-evenly;
     }
 
     .nom-tel div,
-    .mail-vacan div {
+    .mail-vacan div,
+    .nom-ape div,
+    .mail-tel div {
         min-width: 34.4rem;
         width: 49%;
         max-width: 48.2rem;
@@ -815,11 +819,22 @@ label {
     .fila {
         padding: 0 calc((100vw - 1004px) / 3);
     }
+
+    #contacto .form p,
+    #contacto .form ~ p {
+        padding-left: calc((100vw - 1004px) / 3);
+        margin: 2rem 0;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .fila {
         padding: 0 14.5rem;
+    }
+
+    #contacto .form {
+        max-width: 140rem;
+        margin: 0 auto;
     }
 }
 /* Fin Formularios */
@@ -1256,4 +1271,18 @@ hr {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
+}
+/* Fin Planes */
+
+/* Contacto */
+#contacto .hero {
+    background-image: url(https://cyberdietoterapia.com/images/background-contacto.jpg);
+}
+
+textarea {
+    height: 20rem;
+}
+
+.required {
+    color: rgb(255, 0, 0);
 }
