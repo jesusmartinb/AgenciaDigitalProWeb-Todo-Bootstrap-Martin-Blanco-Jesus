@@ -1113,3 +1113,101 @@ hr {
         visibility: hidden;
     }
 }
+/* Fin Proyectos */
+
+/* Planes */
+#planes .hero {
+    background-image: url(https://cyberdietoterapia.com/images/background-planes.jpg);
+}
+
+.cards-planes {
+    margin-top: 5rem;
+}
+
+.card-planes {
+    max-width: 385px;
+    margin: 0 auto 4.6rem;
+}
+
+.card-planes .content {
+    border: 2px solid #aaaaaa;
+    border-radius: 10px;
+    background-color: rgb(163, 194, 224);
+    max-width: 385px;
+}
+
+.card-planes .precio {
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-style: oblique;
+}
+
+.incluye {
+    min-height: 40rem;
+}
+
+.incluye ul,
+.incluyen ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.incluyen ul {
+    margin: 0;
+}
+
+.incluye li,
+.incluyen li {
+    padding: 1rem 0;
+}
+
+.incluye li:before,
+.incluyen li:before {
+    content: "✔";
+    margin-right: 1rem;
+    color: rgb(56, 207, 56);
+}
+
+/* Planes Media Queries */
+@media screen and (min-width: 1024px) {
+    /* .cards-planes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
+
+    .card-planes {
+        min-width: 33rem;
+    }
+
+    .incluye ul {
+        min-height: 34.4rem;
+    }
+
+    .incluyen h3,
+    .proceso h3 {
+        text-align: center;
+    }
+
+    .incluyen .incluido {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cards-proceso {
+        flex-direction: row;
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .cards-planes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
