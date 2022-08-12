@@ -1168,13 +1168,60 @@ hr {
     color: rgb(56, 207, 56);
 }
 
-/* Planes Media Queries */
-@media screen and (min-width: 1024px) {
-    /* .cards-planes {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    } */
+.proceso h3 {
+    margin-bottom: 5rem;
+}
 
+.card-proceso {
+    width: 280px;
+    margin: 0 auto;
+    height: 24rem;
+}
+
+.card-proceso .iconos,
+.card-proceso .iconos2,
+.card-proceso .iconos3,
+.card-proceso .iconos4 {
+    position: relative;
+}
+
+.card-proceso .iconos i:first-child {
+    font-size: 12rem;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+}
+
+.card-proceso .iconos2 i:first-child {
+    font-size: 12rem;
+    position: absolute;
+    top: -30px;
+    left: -35px;
+}
+
+.card-proceso .iconos3 i:first-child {
+    font-size: 12rem;
+    position: absolute;
+    top: -30px;
+    left: -23px;
+}
+
+.card-proceso .iconos4 i:first-child {
+    font-size: 12rem;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.card-proceso .iconos i:last-child,
+.card-proceso .iconos2 i:last-child,
+.card-proceso .iconos3 i:last-child,
+.card-proceso .iconos4 i:last-child {
+    font-size: 6rem;
+}
+
+/* Planes Media Queries */
+@media screen and (min-width: 992px) {
     .card-planes {
         min-width: 33rem;
     }
@@ -1194,9 +1241,8 @@ hr {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
     .cards-proceso {
-        flex-direction: row;
         margin-top: 10rem;
     }
 }
