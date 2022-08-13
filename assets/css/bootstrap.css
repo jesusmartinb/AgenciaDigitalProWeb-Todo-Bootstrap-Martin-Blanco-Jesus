@@ -94,7 +94,7 @@ h4 {
 }
 
 .offcanvas {
-    --bs-offcanvas-width: 200px;
+    --bs-offcanvas-width: 305px;
     background-color: aliceblue;
 }
 
@@ -1286,3 +1286,6 @@ textarea {
 .required {
     color: rgb(255, 0, 0);
 }
+
+/* NavBar */
+
